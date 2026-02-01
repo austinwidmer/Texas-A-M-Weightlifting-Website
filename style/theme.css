@@ -1,0 +1,426 @@
+@import './fonts.css';
+@import './bootstrap.css';
+
+:root {
+  --bs-primary-color: #500000;
+  --bs-secondary-color: #a7a7a7;
+  --bs-text-primary-color: #f1f1f1;
+  --bs-text-secondary-color: #d7d7d7;
+  --aggie-maroon: #500000;
+  --aggie-lighter-maroon: #732f2f;
+  --bs-light-primary: #500000;
+  --bs-dark-primary: #500000;
+  --bs-light-secondary: #0d0d0e4c;
+  --bs-section-background-bolor: #500000;
+}
+
+* {
+  user-select: auto;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 1rem;
+  color: var(--bs-secondary-color);
+  scroll-behavior: smooth;
+  background-color: #000000;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.hero-title h1 {
+  font-family: 'Staatliches', sans-serif;
+  color: var(--bs-text-secondary-color);
+  background: linear-gradient(130deg, #eff1ff 30%, #121212 67%);
+  background-position: 50% 75%;
+  background-size: 200% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 0 !important;
+}
+
+.solution-title {
+  color: var(--bs-text-secondary-color);
+  background: linear-gradient(164deg, #eff1ff 40%, #121212 75%);
+  background-position: 50% 75%;
+  background-size: 200% 100%;
+  -webkit-background-clip: text;
+  font-weight: 600;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 0 !important;
+}
+
+.bg-theme-dark {
+  background-color: var(--bs-primary-color);
+}
+
+.bg-dark {
+  background-color: #000000 !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Staatliches', sans-serif;
+  color: var(--bs-text-primary-color);
+  margin-bottom: 0 !important;
+}
+
+hr {
+  background-color: var(--bs-text-primary-color) !important;
+  opacity: 1 !important;
+  height: 2px !important;
+  border-radius: 10px;
+}
+
+hr:not([size]) {
+  height: 2px !important;
+}
+
+a {
+  text-decoration: none !important;
+  color: #6db3f2 !important;
+}
+
+p {
+  margin-bottom: 0 !important;
+}
+
+.paragraph-quote {
+  font-size: 1.5rem;
+  color: var(--bs-text-secondary-color) !important;
+}
+
+ul {
+  /* list-style-type: none; */
+}
+
+.text-primary {
+  color: var(--bs-text-primary-color) !important;
+}
+
+.text-secondary {
+  color: var(--bs-text-secondary-color) !important;
+}
+
+.text-theme-primary {
+  color: var(--bs-primary-color) !important;
+}
+
+.text-theme-secondary {
+  color: var(--bs-secondary-color) !important;
+}
+
+.text-aggie-maroon {
+  color: var(--aggie-maroon) !important;
+}
+
+.text-aggie-lighter-maroon {
+  color: var(--aggie-lighter-maroon) !important;
+}
+
+.navbar {
+  padding: 0.25rem 0;
+}
+
+.nav-link {
+  font-size: 1rem;
+  font-family: 'Staatliches', sans-serif;
+  color: var(--bs-text-secondary-color) !important;
+  letter-spacing: normal;
+  transition: color 0.3s ease, letter-spacing 0.3s ease;
+}
+
+.donate-page .nav-link {
+  color: #000000 !important;
+}
+
+.contactus-page .nav-link {
+  color: #000000 !important;
+}
+
+.nav-item .active {
+  color: var(--bs-text-primary-color) !important;
+}
+
+.donate-page .nav-item .active {
+  color: #000000 !important;
+}
+
+.contactus-page .nav-item .active {
+  color: #000000 !important;
+}
+
+.nav-link:hover {
+  color: var(--bs-text-primary-color) !important;
+  letter-spacing: 1px;
+}
+
+.donate-page .nav-link:hover {
+  color: #000000 !important;
+}
+
+.contactus-page .nav-link:hover {
+  color: #000000 !important;
+}
+
+.theme-cta .arrow-icon {
+  margin-left: 8px;
+  rotate: -45deg;
+  transition: rotate 0.3s ease;
+}
+
+.theme-cta:hover .arrow-icon {
+  rotate: 0deg;
+}
+
+.logo-img {
+  max-width: 50px;
+  height: auto;
+}
+
+.btn {
+  font-family: 'Staatliches', sans-serif;
+  font-size: 1rem;
+}
+
+.btn-outline-light {
+  background-color: transparent !important;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  color: var(--bs-text-primary-color) !important;
+  transition: background-color 0.3s ease, border 0.3s ease, color 0.3s ease;
+}
+
+.btn-outline-light:hover {
+  background-color: transparent !important;
+  color: var(--bs-text-secondary-color) !important;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+}
+
+.btn-outline-theme {
+  background-color: transparent !important;
+  border: 1px solid rgba(255, 255, 255, 0);
+  color: var(--bs-secondary-color) !important;
+  transition: background-color 0.3s ease, border 0.3s ease, color 0.3s ease;
+}
+
+.btn-outline-theme:hover {
+  background-color: transparent !important;
+  color: white !important;
+  border: 1px solid rgba(255, 255, 255, 0);
+}
+
+.btn-outline-theme:hover .arrow-icon {
+  fill: white !important;
+}
+
+.hero-heading {
+  font-size: 3.5rem;
+}
+
+.hero-subheading {
+  font-size: 1.25rem;
+}
+
+.hero-title {
+  width: 90vw;
+}
+
+#hero-section-banner {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.home-page #hero-section-banner {
+  background-image: url('../assets/imgs/main-banner.png');
+}
+
+.team-page #hero-section-banner {
+  background-image: url('../assets/imgs/about-us-1.jpeg');
+}
+
+.donate-page #hero-section-banner {
+  background-image: url('../assets/imgs/donate.jpeg');
+}
+
+.contactus-page #hero-section-banner {
+  background-image: url('../assets/imgs/Charles2.jpeg');
+}
+
+#hero-section {
+  position: relative;
+  width: 100%;
+  height: 89vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#quick-link {
+  background-color: #f5f5f5;
+}
+
+#counter-section {
+  background-color: #f5f5f5;
+}
+
+.section-bg {
+  background-color: var(--bs-section-background-bolor);
+  color: var(--bs-text-primary-color);
+}
+
+.team-page #coaches-officers {
+  background-color: #f5f5f5;
+  color: var(--bs-secondary-color);
+}
+
+.team-page #coaches-officers p {
+  color: #000000;
+}
+
+.section-primary
+
+.bg-primary {
+  background-color: var(--bs-primary-color) !important;
+}
+
+.bg-blur {
+  background: rgba(255, 255, 255, 0);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.link-container {
+  background-color: var(--bs-light-primary);
+}
+
+#counter-section .couunter-container .number-counter {
+  position: relative;
+  padding: 5px;
+}
+
+#counter-section .couunter-container .number-counter .counter {
+  font-size: 5rem;
+  color: var(--bs-dark-primary) !important;
+  opacity: 0.6;
+}
+
+#counter-section .couunter-container .number-counter p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  font-family: 'Staatliches', sans-serif;
+}
+
+#counter-section .couunter-container .number-counter:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  top: 25%;
+  right: 0;
+  height: 50%;
+  width: 1px;
+  background-color: var(--bs-text-primary-color);
+}
+
+#counter-section .couunter-container {
+  display: flex;
+  align-items: center;
+}
+
+
+.card {
+  background-color: #ffffff !important;
+  border: 1px solid rgba(255, 255, 255, 0) !important;
+  padding: 40px 25px !important;
+  transition: background-color 0.3s ease;
+}
+
+.card .arrow-icon {
+  rotate: -45deg;
+  transition: rotate 0.3s ease;
+}
+
+
+.card:hover {
+  background-color: #f92c360c !important;
+}
+
+.link-container.card:hover .arrow-icon {
+  rotate: 0deg;
+  transition: rotate 0.3s ease;
+}
+
+.card hr {
+  width: 45% !important;
+}
+
+@media (max-width: 768px) {
+  #counter-section .couunter-container .number-counter {
+    border-right: none;
+    border-bottom: 1px solid #ccc;
+  }
+
+  #counter-section .couunter-container .number-counter:not(:last-child)::after {
+    display: none;
+    /* Remove vertical borders on smaller screens */
+  }
+
+  #counter-section .couunter-container {
+    flex-direction: column;
+  }
+}
+
+
+/* Swiper Sliders */
+
+
+
+.marquee-container {
+  position: relative;
+  width: 100%;
+  height: 100px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+.marquee {
+  display: flex;
+  animation: scroll 10s linear infinite;
+}
+
+.marquee span {
+  color: white;
+  font-size: 24px;
+  margin: 0 50px;
+  white-space: nowrap;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.about-us-text {
+  color: white;
+}

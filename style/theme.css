@@ -328,6 +328,7 @@ ul {
   transform: translate(-50%, -50%);
   z-index: 1;
   font-family: 'Staatliches', sans-serif;
+  color: #000000;
 }
 
 #counter-section .couunter-container .number-counter:not(:last-child)::after {
@@ -343,6 +344,7 @@ ul {
 #counter-section .couunter-container {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 
